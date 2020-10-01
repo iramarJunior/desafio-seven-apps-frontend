@@ -4,7 +4,7 @@ import AutoSizer from 'react-virtualized-auto-sizer';
 import { CSSProperties } from 'styled-components';
 import api from '../../services/api';
 
-import { Container, SearchBox, User, UserBox } from './styles';
+import { Container, SearchBox, User, UserBox, Message } from './styles';
 
 interface UserData {
   name: string;
@@ -88,6 +88,13 @@ const Users: React.FC = () => {
           />
           <button type="submit">Search</button>
         </SearchBox>
+
+        {users.length === 0 && usersFiltered.length === 0 && (
+          <Message>Loading...</Message>
+        )}
+        {users.length > 0 && usersFiltered.length === 0 && (
+          <Message>Não há dados.</Message>
+        )}
 
         <UserBox>
           <ListUser />

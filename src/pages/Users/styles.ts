@@ -55,3 +55,8 @@ export const UserBox = styled.div`
   height: 100vh;
   margin-top: 80px;
 `;
+
+export const Message = styled.h2`
+  margin-top: 40px;
+  color: #3d3d3d;
+`;
