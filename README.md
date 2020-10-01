@@ -1,5 +1,8 @@
 # Desafio FrontEnd Seven Apps
 
+## Intro
+A simple app developed in React JS using typescript e styled-components.
+
 ## Used libraries
  - styled-components
  - axios
